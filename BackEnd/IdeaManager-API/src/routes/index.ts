@@ -14,6 +14,6 @@ const routes = Router();
 
 
 
-routes.use("/idea",ideaRouter)
+routes.use("/ideas",ideaRouter)
 
 export default routes
