@@ -1,8 +1,29 @@
+# [0.0.4] - 30/08/2020
+## Changed Find by Id to Find by Alias
+## Changed Route Update by Id to Update by Alias
+
+**Changed Files**
+
+        modified:   .gitignore
+        modified:   BackEnd/IdeaManager-API/src/models/Idea.ts
+        modified:   BackEnd/IdeaManager-API/src/repositories/IdeaRepository.ts
+        modified:   BackEnd/IdeaManager-API/src/routes/idea.routes.ts
+        renamed:    BackEnd/IdeaManager-API/src/services/ideaServices/UpdateIdeaByNameService.ts -> BackEnd/IdeaManager-API/src/services/ideaServices/UpdateIdeaByAliasService.ts
+        modified:   BackEnd/IdeaManager-API/src/services/ideaServices/index.ts
+        modified:   Changelog.md
+
+---
+
 # [0.0.3] - 30/08/2020
 ## Idea Routes Update
 ## Router Log fix
 
 **Changed Files**
+
+        modified:   BackEnd/IdeaManager-API/src/routes/idea.routes.ts
+        modified:   BackEnd/IdeaManager-API/src/routes/index.ts
+        modified:   BackEnd/IdeaManager-API/src/services/ideaServices/index.ts
+        modified:   Changelog.md
 
 ---
 

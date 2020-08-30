@@ -1,5 +1,5 @@
 import CreateIdeaService from './CreateIdeaService'
-import UpdateIdeaByNameService from './UpdateIdeaByNameService'
+import UpdateIdeaByNameService from './UpdateIdeaByAliasService'
 
 module.exports = {
     CreateIdeaService,

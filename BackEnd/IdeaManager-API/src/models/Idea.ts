@@ -4,6 +4,7 @@ import Tech from './Tech'
 class Idea{
     id: string;
     name: string;
+    alias:string;
     purpose: string;
     description: string;
     creationDate: Date;
@@ -12,9 +13,10 @@ class Idea{
     beginDate: Date|null;
     endDate: Date|null;
 
-    constructor({name,purpose,description,creationDate}: Omit<Idea,"id"|"techs"|"isDone"|"beginDate"|"endDate">){
+    constructor({name,purpose,description,creationDate}: Omit<Idea,"id"|"techs"|"isDone"|"beginDate"|"endDate"|"alias">){
         this.id= uuid();
         this.name= name;
+        this.alias = name.split(' ').join('').toLowerCase();
         this.purpose= purpose;
         this.description= description;
         this.creationDate= creationDate;

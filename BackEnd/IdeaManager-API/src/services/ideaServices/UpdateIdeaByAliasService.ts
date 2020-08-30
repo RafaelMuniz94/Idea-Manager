@@ -1,34 +1,33 @@
 import Idea from "../../models/Idea";
 import IdeaRepository from "../../repositories/IdeaRepository";
 
-class UpdateIdeaByNameService {
+class UpdateIdeaByAliasService {
   private repository: IdeaRepository;
 
   constructor(repo: IdeaRepository) {
     this.repository = repo;
   }
 
-  public execute(data: Omit<Idea, "id">): Idea {
+  public execute(alias:string,data: Omit<Idea, "id"|"alias"|"creationDate">): Idea {
     let {
       name,
       purpose,
-      description,
-      creationDate,
+      description,      
       techs,
       isDone,
       beginDate,
       endDate,
     } = data;
 
-    let Idea = this.repository.findByName(name);
+    let Idea = this.repository.findByAlias(alias);
 
     if (!Idea) throw Error("Idea Not Found!");
 
     let updateObject = {
       name: (name === Idea.name ? Idea.name : name) ,
+      alias: name.split(' ').join('').toLowerCase(),
       purpose: (purpose === Idea.purpose ? Idea.purpose :purpose ),
       description:(description === Idea.description ? Idea.description : description),
-      creationDate:(creationDate === Idea.creationDate ? Idea.creationDate :creationDate ),
       techs:(techs === Idea.techs ? Idea.techs :techs ),
       isDone:(isDone === Idea.isDone ? Idea.isDone : isDone),
       beginDate:(beginDate === Idea.beginDate ? Idea.beginDate :beginDate ),
@@ -41,4 +40,4 @@ class UpdateIdeaByNameService {
   }
 }
 
-export default UpdateIdeaByNameService
+export default UpdateIdeaByAliasService
