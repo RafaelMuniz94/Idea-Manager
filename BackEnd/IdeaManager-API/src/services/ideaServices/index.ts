@@ -1,11 +1,7 @@
 import CreateIdeaService from './CreateIdeaService'
 import UpdateIdeaByNameService from './UpdateIdeaByNameService'
 
-class IdeaServices{
-    // let CreateIdeaService: CreateIdeaService;
-    // let UpdateIdeaByNameService: UpdateIdeaByNameService
-
-    // createor
+module.exports = {
+    CreateIdeaService,
+    UpdateIdeaByNameService
 }
-
-export default IdeaServices

@@ -1,3 +1,11 @@
+# [0.0.3] - 30/08/2020
+## Idea Routes Update
+## Router Log fix
+
+**Changed Files**
+
+---
+
 # [0.0.2] - 30/08/2020
 ## Inclusion of Json in all routes
 ## Creation of Idea Services

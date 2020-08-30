@@ -13,7 +13,7 @@ function Log(request:Request,response:Response,next:NextFunction){
 const routes = Router();
 
 
-
+routes.use(Log)
 routes.use("/ideas",ideaRouter)
 
 export default routes
