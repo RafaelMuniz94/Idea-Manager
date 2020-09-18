@@ -1,3 +1,33 @@
+# [0.0.5] - 18/09/2020
+## Add TypeORM dependecy
+## Add PG dependecy
+## Add Cors dependecy
+## Create Migrations
+## Create Users base Model
+## Create ORM Configuration File
+
+**Changed Files**
+
+        modified:   .gitignore
+        new file:   BackEnd/IdeaManager-API/ormconfig-example.json
+        modified:   BackEnd/IdeaManager-API/package.json
+        new file:   BackEnd/IdeaManager-API/src/database/index.ts
+        new file:   BackEnd/IdeaManager-API/src/database/migrations/1600395257061-CreateIdeaTable.ts
+        new file:   BackEnd/IdeaManager-API/src/database/migrations/1600397174416-CreateTechTable.ts
+        new file:   BackEnd/IdeaManager-API/src/database/migrations/1600398157932-CreateTableUser.ts
+        new file:   BackEnd/IdeaManager-API/src/database/migrations/1600398909926-CreateTableRelationIdeaTech.ts
+        new file:   BackEnd/IdeaManager-API/src/database/migrations/1600400662910-CreateTableRelationUsersIdeas.ts
+        modified:   BackEnd/IdeaManager-API/src/models/Idea.ts
+        new file:   BackEnd/IdeaManager-API/src/models/Users.ts
+        modified:   BackEnd/IdeaManager-API/src/server.ts
+        modified:   BackEnd/IdeaManager-API/src/services/ideaServices/index.ts
+        modified:   BackEnd/IdeaManager-API/tsconfig.json
+        modified:   BackEnd/IdeaManager-API/yarn-error.log
+        modified:   BackEnd/IdeaManager-API/yarn.lock
+        modified:   Changelog.md
+
+---
+
 # [0.0.4] - 30/08/2020
 ## Changed Find by Id to Find by Alias
 ## Changed Route Update by Id to Update by Alias

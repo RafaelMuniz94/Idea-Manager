@@ -1,7 +1,3 @@
-import CreateIdeaService from './CreateIdeaService'
-import UpdateIdeaByNameService from './UpdateIdeaByAliasService'
-
-module.exports = {
-    CreateIdeaService,
-    UpdateIdeaByNameService
-}
+ 
+import {default as UpdateIdeaByNameService} from './UpdateIdeaByAliasService'
+export {default as CreateIdeaService} from './CreateIdeaService'

@@ -2,3 +2,5 @@ build/
 build.js
 node_modules
 .vscode/
+
+/BackEnd/IdeaManager-API/ormconfig.json

@@ -1,5 +1,6 @@
 import {uuid} from "UuidV4"
 import Tech from './Tech'
+import {Entity} from 'typeorm'
 
 class Idea{
     id: string;
